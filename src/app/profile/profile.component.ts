@@ -10,9 +10,17 @@ import { Router } from '@angular/router';
     selector: 'profile',
     encapsulation: ViewEncapsulation.None,
     providers: [GithubService],
-    templateUrl: './profile.template.html'
+    templateUrl: './profile.template.html',
+    styles: [`
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    `]
 })
 export class ProfileComponent {
+    public isLoading: boolean = true;
     public user: any = {};
     private profileDialogVisible = false;
     private deleteDialogVisible = false;
@@ -20,6 +28,9 @@ export class ProfileComponent {
     constructor(public githubService: GithubService, private router: Router) {
         githubService.getGithubUser('ggkrustev').subscribe(data => {
             this.user = data;
+            this.isLoading = false;
+        }, (err)=>{
+            this.isLoading = false;
         });
     }
 

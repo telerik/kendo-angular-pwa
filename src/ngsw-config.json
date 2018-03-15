@@ -6,7 +6,8 @@
     "resources": {
       "files": [
         "/favicon.ico",
-        "/index.html"
+        "/index.html",
+        "/assets/**"
       ],
       "versionedFiles": [
         "/*.bundle.css",
@@ -14,14 +15,17 @@
         "/*.chunk.js"
       ]
     }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  }]
+  }],
+  "dataGroups": [{
+      "name": "api-freshness",
+      "urls": [
+        "https://api.github.com/**"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "3d",
+        "timeout": "10s"
+      }
+    }]
 }

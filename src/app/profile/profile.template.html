@@ -1,5 +1,9 @@
-<div *ngIf="user.id" >
-
+<loading-spinner *ngIf="isLoading">
+</loading-spinner>
+<div *ngIf="!isLoading && !user.id">
+    <img class="center" src="../../assets/noConnection.png">
+</div>
+<div *ngIf="user.id && !isLoading" >
     <div class="row">
         <div class="col-md text-center text-md-left mb-3">
             <h2>

@@ -25,6 +25,7 @@ import 'hammerjs';
     templateUrl: './dashboard.template.html'
 })
 export class DashboardComponent {
+    public isLoading: boolean = true;
     public today: Date = new Date();
     public rangeStart: Date;
     private issues: any;
@@ -43,12 +44,14 @@ export class DashboardComponent {
             .getGithubIssues({pages: 14})
             .map(data => {
                 this.data = data;
+                this.isLoading = false;
                 return this.issuesProcessor.process(data, this.months)
-            })
+            }, (err) => this.isLoading = false)
             .merge(Observable.of(new IssuesModel()))
             .subscribe((data: IssuesModel) => {
-                this.issues = data
-            });
+                this.issues = data;
+                this.isLoading = false;
+            },(err) => this.isLoading = false);
     }
 
     onFilterClick(months) {

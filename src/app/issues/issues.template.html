@@ -13,7 +13,13 @@
         </h2>
     </div>
 </div>
+<loading-spinner *ngIf="isLoading">
+</loading-spinner>
+<div *ngIf="!isLoading && !view">
+    <img src="../../assets/noConnection.png">
+</div>
 <kendo-grid
+    *ngIf="view"
     [data]="view"
     [pageSize]="pageSize"
     [pageable]="{ pageSizes: true, buttonCount: 3 }"

@@ -38,12 +38,13 @@ export class IssuesComponent {
     @HostBinding('class') get get_class() { return 'issues'; }
 
     constructor(public http: Http, public githubService: GithubService, public issuesProcessor: IssuesProcessor) {
+
         githubService.getGithubIssues({pages: 12}).subscribe((data: any[]) => {
             data = data.reduce((agg, curr) => [...agg, ...curr], []).filter(issue => issue.pull_request ? false : true);
             this.allIssues = data;
             this.applyPaging(this.issuesProcessor.filterByMonth(this.allIssues, this.months))
             this.isLoading = false;
-        });
+        },(err) => this.isLoading = false);
     }
 
     onFilterClick(e) {
@@ -58,6 +59,7 @@ export class IssuesComponent {
     onPageChange(e) {
         this.skip = e.skip;
         this.view = this.getView(e.skip, e.take);
+
     }
 
     applyPaging(data) {

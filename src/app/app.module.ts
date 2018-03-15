@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Http, HttpModule } from '@angular/http';
+import { ServiceWorkerModule } from '@angular/service-worker'
+
 // vendor dependencies
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -30,7 +32,10 @@ import { ActiveIssuesComponent } from './charts/active-issues.component';
 import { TypesDistributionComponent } from './charts/types-distribution.component';
 import { IssueTypesComponent } from './charts/issue-types.component';
 import { StatisticsComponent } from './charts/statistics.component';
+import { LoadingComponent } from './shared/spinner.component'
 
+//environment
+import { environment } from '../environments/environment';
 
 
 Config.PLATFORM_TARGET = Config.PLATFORMS.WEB;
@@ -52,10 +57,12 @@ export function createTranslateLoader(http: Http) {
         ActiveIssuesComponent,
         TypesDistributionComponent,
         IssueTypesComponent,
-        StatisticsComponent
+        StatisticsComponent,
+        LoadingComponent
     ],
     imports: [
         AppRoutingModule,
+        ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
         BrowserModule,
         ChartsModule,
         GridModule,
