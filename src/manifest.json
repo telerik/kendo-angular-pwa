@@ -1,0 +1,21 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Kendo Angular PWA",
+  "scope": "/",
+  "display": "fullscreen",
+  "start_url": "http://localhost:8080/",
+  "short_name": "Kendo Angular PWA",
+  "theme_color": "transparent",
+  "description": "Sample Kendo PWA App",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 36x36 48x48 72x72 96x96 144x144 192x192"
+    }
+  ]
+}

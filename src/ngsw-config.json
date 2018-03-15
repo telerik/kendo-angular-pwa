@@ -22,7 +22,7 @@
         "https://api.github.com/**"
       ],
       "cacheConfig": {
-        "strategy": "freshness",
+        "strategy": "performance",
         "maxSize": 100,
         "maxAge": "3d",
         "timeout": "10s"
