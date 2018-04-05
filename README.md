@@ -18,5 +18,6 @@ This repository demonstrates a PWA application based on the <a href="https://ang
 ## Further help
 
     Once the application is up an running in prod mode, we can check its functionality by inspecting the Application tab of the browser's console.
-    
 
+![Service Worker](https://github.com/telerik/kendo-angular-pwa/master/src/assets/help_images/sw.png)
+                    
