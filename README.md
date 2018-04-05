@@ -17,11 +17,10 @@ This repository demonstrates a PWA application based on the <a href="https://ang
 
 ## Further help
 
-Once the application is up an running in prod mode, we can check its functionality by inspecting the Application tab of the browser's console.
-
+Once the application is up an running in prod mode, we can check its functionality by inspecting the Application tab of the browser's console:
 ![Service Worker](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/sw.png)
 
-We can then check the "Offline" option in order to check the offline functionality of the app.
+We can then check the "Offline" option in order to check the offline functionality of the app:
 ![Offline](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/offline.png)
 
 We can inspect the cached local assets:
@@ -29,3 +28,15 @@ We can inspect the cached local assets:
 
 And the cached remote assets:
 ![Remote assets](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/cached_remote.png)
+
+Add the app to the home screen:
+![Add to home screen](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/add_to_home.png)
+
+Confirm:
+![Confirm](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/confirm.png)
+
+Now, we will see the app's icon on our desktop and in the browser's dashboard:
+![Browser dashboard](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/dashboard.png)
+
+
+
