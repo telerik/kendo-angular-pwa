@@ -12,9 +12,6 @@ import { ActiveIssuesComponent } from '../charts/active-issues.component';
                     <loading-spinner>
                     </loading-spinner>
                 </div>
-                <div *ngIf="!loading && !issues.active.length" class="card">
-                    <img src="../../assets/noConnection.png" width="1024">
-                </div>
                 <active-issues 
                     *ngIf="!loading && issues.active.length"
                     [data]="issues.groupedIssues" 

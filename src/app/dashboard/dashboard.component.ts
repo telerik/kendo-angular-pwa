@@ -50,8 +50,7 @@ export class DashboardComponent {
             .merge(Observable.of(new IssuesModel()))
             .subscribe((data: IssuesModel) => {
                 this.issues = data;
-                this.isLoading = false;
-            },(err) => this.isLoading = false);
+            });
     }
 
     onFilterClick(months) {
