@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation, NgModule, HostBinding } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MarkdownComponent } from '../markdown/markdown.component';
-import { Http, Headers } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs/Rx';
 import { GithubService } from './../shared/github.service';
 import { IssuesProcessor } from './../shared/issues-processor.service';
@@ -37,7 +37,7 @@ export class IssuesComponent {
     @HostBinding('attr.id') get get_id() { return 'issues'; }
     @HostBinding('class') get get_class() { return 'issues'; }
 
-    constructor(public http: Http, public githubService: GithubService, public issuesProcessor: IssuesProcessor) {
+    constructor(public http: HttpClient, public githubService: GithubService, public issuesProcessor: IssuesProcessor) {
 
         githubService.getGithubIssues({pages: 12}).subscribe((data: any[]) => {
             data = data.reduce((agg, curr) => [...agg, ...curr], []).filter(issue => issue.pull_request ? false : true);
