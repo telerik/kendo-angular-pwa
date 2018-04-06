@@ -17,7 +17,15 @@ This repository demonstrates a PWA application based on the <a href="https://ang
 
 ## Further help
 
-Once the application is up an running in prod mode, we can check its functionality by inspecting the Application tab of the browser's console:
+Creating a new project via ```ng new my-project --service-worker``` will create a default config file of the service worker - <b>ngsw-config.json</b>. We can further modify this file. For example we can specify which local assets and data received from http requets, hitting particular domains, to be cached. For more details about the available configuration settings of the ngsw-config.json file check the following article:
+
+<a href="https://angular.io/guide/service-worker-config">Service Worker Configuration</a>
+
+We can also create a <b>manifest.json</b> file that is used to tell the device running the application how to display it on its home screen. For more details sbout setting up and configuring the manifest.json file check the following article:
+
+<a href="https://developers.google.com/web/fundamentals/web-app-manifest/?utm_source=devtools">The Web App Manifest</a>
+
+Once the application is up and running in prod mode, we can check its functionality by inspecting the Application tab of the browser's console:
 ![Service Worker](https://github.com/telerik/kendo-angular-pwa/blob/master/src/assets/help_images/sw.png)
 
 We can then check the "Offline" option in order to check the offline functionality of the app:
