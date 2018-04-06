@@ -204,7 +204,7 @@ main {
 .dashboard {
 	display: block;
 
-	.card-block {
+	.card-body {
 		position: relative;
 	}
 
@@ -228,6 +228,7 @@ main {
 
 
 	.comp-label {
+		font-weight: bold;
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
@@ -240,7 +241,7 @@ main {
 			display: block;
 		}
 		small {
-			font-size: .7em;
+			font-size: 1em;
 			text-transform: uppercase;
 			display: block;
 		}
@@ -266,7 +267,7 @@ main {
 	.issue-types {
 		overflow: hidden;
 	}
-	.issue-types .card-block {
+	.issue-types .card-body {
 		max-width: 100%;
 		margin: auto;
 	}
@@ -292,6 +293,7 @@ main {
 		margin-top: $spacer * 1.5;
 	}
 	.badge {
+		color: #fff;
 		margin-right: .5em;
 	}
 

@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
     template: `
         <div class="card">
             <h3 class="card-header">Active Issues</h3>
-            <div class="card-block">
+            <div class="card-body">
 
                 <div class="row">
 

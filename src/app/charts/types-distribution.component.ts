@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
     template: `
         <div class="card">
             <h4 class="card-header">Types Distribution</h4>
-            <div class="row card-block pb-0 small">
+            <div class="row card-body pb-0 small">
                 <a *ngFor="let button of seriesColors" (click)="addSeries(button, true)"
                     [style.color]="button.active ? button.value : initialGrey"
                     class="col-6 col-lg-4 col-xl-2 pb-3 comp-label">
@@ -13,7 +13,7 @@ import { Component, Input, OnInit } from '@angular/core';
                     <small>{{button.label}}</small>
                 </a>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <kendo-chart style="height: 300px;" [transitions]="false">
                     <kendo-chart-series-defaults type="line" [overlay]="false"></kendo-chart-series-defaults>
                     <kendo-chart-category-axis>
