@@ -41,7 +41,7 @@ export class DashboardComponent {
         this.rangeStart = this.issuesProcessor.getMonthsRange(this.months);
 
         this.subscription = githubService
-            .getGithubIssues({pages: 14})
+            .getGithubIssues({pages: 5})
             .map(data => {
                 this.data = data;
                 this.isLoading = false;

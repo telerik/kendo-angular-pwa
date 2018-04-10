@@ -39,7 +39,7 @@ export class IssuesComponent {
 
     constructor(public http: HttpClient, public githubService: GithubService, public issuesProcessor: IssuesProcessor) {
 
-        githubService.getGithubIssues({pages: 12}).subscribe((data: any[]) => {
+        githubService.getGithubIssues({pages: 5}).subscribe((data: any[]) => {
             data = data.reduce((agg, curr) => [...agg, ...curr], []).filter(issue => issue.pull_request ? false : true);
             this.allIssues = data;
             this.applyPaging(this.issuesProcessor.filterByMonth(this.allIssues, this.months))
