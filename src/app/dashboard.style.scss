@@ -161,8 +161,6 @@ kendo-tabstrip {
 	cursor: pointer;
 }
 
-
-
 @media (max-width: map-get($grid-breakpoints, md) ) {
 	#nav {
 		width: 320px;
@@ -185,20 +183,15 @@ main {
 	position: relative;
 	z-index: 1;
 
-
 	// Cards
 	.card {
 		margin-top: $spacer * 1.5;
 	}
-	.card .card-header {}
 }
 
 .img-circle {
 	border-radius: 50%;
 }
-
-
-
 
 // Dashboard
 .dashboard {
@@ -228,9 +221,6 @@ main {
 
 
 	.comp-label {
-		color: #111111;
-		background-color: #ffffff;
-		font-weight: bold;
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
@@ -252,11 +242,6 @@ main {
 		-webkit-user-select: none;
 		cursor: pointer;
 	}
-
-
-	.active-issues {}
-	.closed-issues {}
-	.open-issues {}
 	.close-rate {
 		.k-chart {
 			padding-top: 6px;
@@ -284,8 +269,15 @@ main {
 	}
 }
 
-
-
+@media (max-width: 591px) {
+	.dashboard {
+		.k-tabstrip .k-tabstrip-items {
+			position: relative;
+			top: calc( 1.75em + 6px);
+			font-size: 11px;
+		}
+	}
+}
 
 // Issues
 .issues {
