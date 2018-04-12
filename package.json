@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "publish": "ng build --prod --base-href https://telerik.github.io/kendo-angular-pwa/ && ./node_modules/.bin/angular-cli-ghpages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -38,6 +39,7 @@
     "@progress/kendo-data-query": "^1.2.0",
     "@progress/kendo-drawing": "^1.5.1",
     "@progress/kendo-theme-bootstrap": "^2.11.0",
+    "angular-cli-ghpages": "^0.5.2",
     "bootstrap": "~4.0.0",
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
