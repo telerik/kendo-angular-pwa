@@ -32,7 +32,7 @@
         "https://telerik.github.io/kendo-angular-pwa/assets/help_images/sw.png",
         "https://telerik.github.io/kendo-angular-pwa/assets/i18n/en.json",
         "https://telerik.github.io/kendo-angular-pwa/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://telerik.github.io/kendo-angular-pwa/main.79ecb367f67885a0f122.bundle.js",
+        "https://telerik.github.io/kendo-angular-pwa/main.22fe73827f5f060d73fe.bundle.js",
         "https://telerik.github.io/kendo-angular-pwa/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
         "https://telerik.github.io/kendo-angular-pwa/styles.f68f31572f7bfac42666.bundle.css"
       ],
@@ -54,11 +54,11 @@
   ],
   "hashTable": {
     "https://telerik.github.io/kendo-angular-pwa/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "https://telerik.github.io/kendo-angular-pwa/main.79ecb367f67885a0f122.bundle.js": "5002097d76d74609fe049b2ee419ca60dcd4b2ad",
+    "https://telerik.github.io/kendo-angular-pwa/main.22fe73827f5f060d73fe.bundle.js": "f8be1fdd913b705b872fa7b04c0df5fd2ae4a041",
     "https://telerik.github.io/kendo-angular-pwa/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
     "https://telerik.github.io/kendo-angular-pwa/styles.f68f31572f7bfac42666.bundle.css": "ebf23e0470c2f107869077af06f736a77a70ee5f",
     "https://telerik.github.io/kendo-angular-pwa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://telerik.github.io/kendo-angular-pwa/index.html": "cdcef075f4a9b49d222c055d1336d39bb64b3d7a",
+    "https://telerik.github.io/kendo-angular-pwa/index.html": "82c2a690a4595de05eef3a73e0a8b6f0703fce59",
     "https://telerik.github.io/kendo-angular-pwa/assets/issue-closed.png": "602d44d51dd5478b7a6eba58cacbd5a0689b21d5",
     "https://telerik.github.io/kendo-angular-pwa/assets/issue-open.png": "4b10898ee27964e0e1434703f4a038218196bd32",
     "https://telerik.github.io/kendo-angular-pwa/assets/issueclosed.png": "602d44d51dd5478b7a6eba58cacbd5a0689b21d5",
