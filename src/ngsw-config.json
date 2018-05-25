@@ -7,9 +7,7 @@
       "files": [
         "/favicon.ico",
         "/index.html",
-        "/assets/**"
-      ],
-      "versionedFiles": [
+        "/assets/**",
         "/*.bundle.css",
         "/*.bundle.js",
         "/*.chunk.js"
