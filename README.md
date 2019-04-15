@@ -1,3 +1,5 @@
+##  This repository is no longer updated. To access the current version, refer to the [`kendo-angular` repository](https://github.com/telerik/kendo-angular/tree/master/examples/projects/integration-pwa).
+
 # KendoAngularPwa
 
 This repository demonstrates a PWA application based on the <a href="https://angular.io/guide/service-worker-getting-started">official Angular implementation of a service worker</a>.
